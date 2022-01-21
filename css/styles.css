@@ -1,0 +1,218 @@
+:root {
+  --fontMain: 'Roboto', sans-serif;
+  --fontSecondary: 'Raleway', sans-serif;
+  --colorPrimary: #212121;
+  --colorSecondary: #757575;
+  --colorBlack: #000000;
+  --colorWhite: #ffffff;
+  --colorWhite-opacity60: #ffffff99;
+  --colorAccent: #2196f3;
+  --colorBackground-dark: #2f303a;
+  --colorBackground-light: #f5f4fa;
+  --fontStyle-main: normal;
+  --fontStyle-italic: italic;
+  --fontWeight-medium: 500;
+  --fontWeight-bold: 700;
+  --fontWeight-black: 900;
+  --fontSize-14: 14px;
+  --fontSize-16: 16px;
+  --fontSize-18: 18px;
+  --fontSize-26: 26px;
+  --fontSize-36: 36px;
+  --fontSize-44: 44px;
+  --lettSpacing-02: 0.02em;
+  --lettSpacing-03: 0.03em;
+  --lettSpacing-06: 0.06em;
+}
+
+body {
+  font-family: var(--fontMain);
+  font-size: var(--fontSize-14);
+  color: var(--colorPrimary);
+}
+
+/* ===== COMPONENTS ===== */
+.website-logo {
+  font-family: var(--fontSecondary);
+  font-weight: var(--fontWeight-bold);
+  font-size: var(--fontSize-26);
+  line-height: 1.192;
+  letter-spacing: var(--lettSpacing-03);
+  color: var(--colorBlack);
+}
+
+.accent {
+  color: var(--colorAccent);
+}
+
+.header-section a,
+.footer-section a {
+  text-decoration-line: none;
+}
+
+.secondary-header {
+  font-weight: var(--fontWeight-bold);
+  font-size: var(--fontSize-36);
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: var(--lettSpacing-03);
+}
+/* ===== END COMPONENTS ===== */
+
+/* ===== HEADER ===== */
+.header-list-links {
+  font-weight: var(--fontWeight-medium);
+  line-height: 1.143;
+  letter-spacing: var(--lettSpacing-02);
+}
+
+.header-list-links:hover,
+.header-list-links:focus {
+  color: var(--colorAccent);
+}
+
+.navigation-list-link {
+  color: var(--colorPrimary);
+}
+
+.header-contact-link {
+  color: var(--colorSecondary);
+}
+
+.navigation-active-link {
+  color: var(--colorAccent);
+}
+/* ===== END HEADER ===== */
+
+/* ===== FOOTER ===== */
+.footer-section {
+  background-color: var(--colorBackground-dark);
+}
+
+.website-logo-dark-theme {
+  color: var(--colorWhite);
+}
+
+.address-list-link {
+  font-style: var(--fontStyle-main);
+  line-height: 1.714;
+  letter-spacing: var(--lettSpacing-03);
+  color: var(--colorWhite);
+}
+
+.address-list-link:hover,
+.address-list-link:focus {
+  color: var(--colorAccent);
+}
+
+.address-contact-link {
+  color: var(--colorWhite-opacity60);
+}
+/* ===== END FOOTER ===== */
+
+/* ===== MAIN PAGE ===== */
+
+/* ----- HERO ----- */
+.hero {
+  background-color: var(--colorBackground-dark);
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1,
+.hero-content button {
+  letter-spacing: var(--lettSpacing-06);
+  color: var(--colorWhite);
+}
+
+.main-header {
+  font-weight: var(--fontWeight-black);
+  font-size: var(--fontSize-44);
+  line-height: 1.364;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-weight: var(--fontWeight-bold);
+  font-size: var(--fontSize-16);
+  line-height: 1.875;
+  background-color: var(--colorAccent);
+  cursor: pointer;
+}
+/* ----- END HERO ----- */
+
+/* ----- ABOUT US ----- */
+.about-content-header {
+  font-weight: var(--fontWeight-bold);
+  line-height: 1.143;
+  letter-spacing: var(--lettSpacing-03);
+  text-transform: uppercase;
+}
+
+.about-content-text {
+  line-height: 1.714;
+  letter-spacing: var(--lettSpacing-03);
+  color: var(--colorSecondary);
+}
+/* ----- END ABOUT US ----- */
+
+/* ----- WHAT WE DO ----- */
+
+/* ----- END WHAT WE DO ----- */
+
+/* ----- TEAM SECTION ----- */
+.team {
+  background-color: var(--colorBackground-light);
+}
+
+.team-list-item h3,
+.team-list-item p {
+  font-size: var(--fontSize-16);
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: var(--lettSpacing-03);
+}
+
+.team-list-name {
+  font-weight: var(--fontWeight-medium);
+}
+
+.team-list-workplace {
+  color: var(--colorSecondary);
+}
+/* ----- END TEAM SECTION ----- */
+
+/* ===== END MAIN PAGE ===== */
+
+/* ===== PORTFOLIO ===== */
+.portfolio-filter-set-btn {
+  font-weight: var(--fontWeight-medium);
+  font-size: var(--fontSize-16);
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: var(--lettSpacing-03);
+  background-color: var(--colorBackground-light);
+  cursor: pointer;
+}
+
+.portfolio-filter-set-btn:hover {
+  color: var(--colorWhite);
+  background: var(--colorAccent);
+}
+
+.portfolio-project-name {
+  font-weight: var(--fontWeight-bold);
+  font-size: var(--fontSize-18);
+  line-height: 2;
+  letter-spacing: var(--lettSpacing-06);
+}
+
+.portfolio-project-type {
+  font-size: var(--fontSize-16);
+  line-height: 1.875;
+  letter-spacing: var(--lettSpacing-03);
+  color: var(--colorSecondary);
+}
+/* ===== END PORTFOLIO ===== */
