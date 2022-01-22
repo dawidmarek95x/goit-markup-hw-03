@@ -10,6 +10,7 @@
   --colorBackground-dark: #2f303a;
   --colorBackground-light: #f5f4fa;
   --colorBorder-header: #ececec;
+  --colorBorder-projects: #eeeeee;
   --fontStyle-main: normal;
   --fontStyle-italic: italic;
   --fontWeight-medium: 500;
@@ -312,7 +313,21 @@ img {
 /* ===== END MAIN PAGE ===== */
 
 /* ===== PORTFOLIO ===== */
+.portfolio-filter-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-filter-set-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-filter-set-btn {
+  padding: 6px 22px;
+  margin-bottom: 56px;
+  border: 0;
+  border-radius: 4px;
   font-weight: var(--fontWeight-medium);
   font-size: var(--fontSize-16);
   line-height: 1.625;
@@ -324,10 +339,26 @@ img {
 
 .portfolio-filter-set-btn:hover {
   color: var(--colorWhite);
-  background: var(--colorAccent);
+  background-color: var(--colorAccent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-project-item {
+  border: 1px solid var(--colorBorder-projects);
+}
+
+.portfolio-project-item:nth-child(-n+6) {
+  margin-bottom: 30px;
 }
 
 .portfolio-project-name {
+  margin: 20px 24px 4px 24px;
   font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-18);
   line-height: 2;
@@ -335,6 +366,7 @@ img {
 }
 
 .portfolio-project-type {
+  margin: 0 24px 20px 24px;
   font-size: var(--fontSize-16);
   line-height: 1.875;
   letter-spacing: var(--lettSpacing-03);
