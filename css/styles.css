@@ -46,8 +46,8 @@ p {
 }
 
 ul {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -88,6 +88,7 @@ img {
 }
 
 .secondary-header {
+  margin-bottom: 50px;
   font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-36);
   line-height: 1.167;
@@ -237,7 +238,20 @@ img {
 /* ----- END HERO ----- */
 
 /* ----- ABOUT US ----- */
+.about {
+  padding-top: 94px;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-content-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .about-content-header {
+  margin-bottom: 10px;
   font-weight: var(--fontWeight-bold);
   line-height: 1.143;
   letter-spacing: var(--lettSpacing-03);
@@ -252,12 +266,27 @@ img {
 /* ----- END ABOUT US ----- */
 
 /* ----- WHAT WE DO ----- */
-
+.what-we-do--list {
+  display: flex;
+  justify-content: space-between;
+}
 /* ----- END WHAT WE DO ----- */
 
 /* ----- TEAM SECTION ----- */
 .team {
   background-color: var(--colorBackground-light);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item h3,
@@ -269,10 +298,13 @@ img {
 }
 
 .team-list-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: var(--fontWeight-medium);
 }
 
 .team-list-workplace {
+  margin-bottom: 30px;
   color: var(--colorSecondary);
 }
 /* ----- END TEAM SECTION ----- */
