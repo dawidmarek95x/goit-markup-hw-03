@@ -160,7 +160,17 @@ img {
 
 /* ===== FOOTER ===== */
 .footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--colorBackground-dark);
+}
+
+.footer-section .address {
+  margin-top: 20px;
+}
+
+.address-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .website-logo-dark-theme {
@@ -188,10 +198,14 @@ img {
 
 /* ----- HERO ----- */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--colorBackground-dark);
 }
 
 .hero-content {
+  width: 696px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -202,6 +216,7 @@ img {
 }
 
 .main-header {
+  margin-bottom: 30px;
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-44);
   line-height: 1.364;
@@ -209,10 +224,14 @@ img {
 }
 
 .hero-btn {
+  padding: 10px 41px 10px 42px;
+  border: 0px;
+  border-radius: 4px;
   font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-16);
   line-height: 1.875;
   background-color: var(--colorAccent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 /* ----- END HERO ----- */
